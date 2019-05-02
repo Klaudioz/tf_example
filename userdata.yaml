@@ -5,6 +5,8 @@ packages:
 write_files:
   - path: /root/index.html
     content: |
-      Im a terraform expert 8)
+      Im not a terraform expert 8)
 runcmd:
   - docker run -d -v /root/index.html:/usr/share/nginx/html/index.html -p 80:80 nginx
+
+#https://cloudinit.readthedocs.io/en/latest/topics/examples.html
