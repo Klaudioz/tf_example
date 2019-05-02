@@ -9,7 +9,7 @@ resource "digitalocean_domain" "claudio_domain" {
 resource "digitalocean_record" "www" {
   domain = "${digitalocean_domain.claudio_domain.name}"
   type   = "A"
-  name   = "test"
+  name   = "resume"
   ttl    = "10"
   value  = "${digitalocean_droplet.web.ipv4_address}"
 }
